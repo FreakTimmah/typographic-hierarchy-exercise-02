@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,700,300italic|Passion+One:400);
+
+@mixin body-font-light {
+    font-family: 'Josefin Slab', Times, Times New Roman serif;
+    font-style: normal;
+    font-weight: 400;  
+}
+
+@mixin body-font-light-italic {
+    font-family: 'Josefin Slab', Times, Times New Roman serif;
+    font-style: italic;
+    font-weight: 300;  
+}
+
+@mixin body-font-light-bold {
+    font-family: 'Josefin Slab', Times, Times New Roman serif;
+    font-style: normal;
+    font-weight: 700;  
+}
+
+@mixin headline-font {
+    font-family: 'Passion One', cursive;
+    font-style: bold;
+    font-weight: 400;  
+}
+
+$background-color: #fff;
+$base-font-size: 19px;
+$color: #334a32;
+$line-height: 5;
+
+@function em($px, $base: $base-font-size) { 
+    @return ($px / $base) * 1em; }
